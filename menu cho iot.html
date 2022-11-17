@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+</head>
+<body>
+    
+    <nav>
+        <!-- <div class="logo"><img src="hinh anh/logo.png" alt=""></div> -->
+        <div class="toggle_menu"><ion-icon class="fa-solid fa-bars"></ion-icon></div>
+        <ul>  
+            <li><a href="#">  
+                <ion-icon class="fa-solid fa-house"></ion-icon>
+                Home
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="fa-solid fa-gear"></ion-icon>
+                setting
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="fa-solid fa-user"></ion-icon>
+                profile
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="fa-solid fa-message"></ion-icon>
+                messenger
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="fa-light fa-arrow-right-from-bracket"></ion-icon>
+                log out
+            </a></li>
+        </ul>
+    </nav>
+    <section class="logo">
+         <img src="hinh anh/logo.png" alt="">
+    </section>
+    
+    <section class="content">
+        <h2>GIÁM SÁT VÀ CẢNH BÁO KHI CÓ NGẬP CỤC BỘ </h2>
+    </section>
+    <script>
+        const nav = document.querySelector('nav');
+        const toggle_menu = document.querySelector('.toggle_menu');
+        const content = document.querySelector('.content');
+
+        toggle_menu.onclick = function(){
+             nav.classList.toggle('hide');
+            content.classlist.toggle('expand');}
+    </script>
+   
+</body>
+</html>

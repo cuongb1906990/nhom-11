@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+}
+nav{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background:	#FFF5EE ;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+
+nav.hide {
+    width: 0px ;
+    transition: linear 0.2s;
+    
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li a {
+    width: 100%;
+    color:	#080808 ;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    transition: linear 0.5s;
+}
+nav ul li a ion-icon {
+    margin: 0 20px;
+    color: aqua ;
+    font-size: 1.2em;
+    transform: linear 0.2s;
+}
+nav ul li a:hover{
+    background:#A52A2A;
+    color: #00BFFF;
+}
+nav ul li a:hover ion-icon {
+    color:	#00008B ;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: ease-in-out 0.5s;   
+}
+.logo{
+    background-color: #FFDAB9;
+    height: 160px;
+}
+.logo img {
+    padding-left: 32em;
+    width: 1100px;
+    height: 150px;
+    text-transform: uppercase;
+}
+.content h2{
+    width: 1000px;
+    padding-bottom: 300px;
+    font-size: 2.5em;
+    color: #00BFFF;
+    text-transform: uppercase;
+
+}
+
+nav .toggle_menu {
+    position: absolute;
+    top:20px;
+    right: -46px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:	#FFDAB9;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: linear 0.2s;
+    /* font-size: 30px; */
+}
+nav .toggle_menu ion-icon{
+    color: #00BFFF;
+    font-size: 1.5em;
+    transition: linear 0.2s;
+
+}
+nav .toggle_menu:hover {
+    background: #00BFFF;
+}
+nav .toggle_menu:hover ion-icon {
+    color: #FFDAB9;
+}
