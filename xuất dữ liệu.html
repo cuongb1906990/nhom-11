@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="xuat.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+
+    </head>
+    <body>
+         
+     <nav>
+      <div class="toggle_menu"><ion-icon class="fa-solid fa-bars"></ion-icon></div>
+      <ul>  
+          <li><a href="menu cho iot.html">  
+              <ion-icon class="fa-solid fa-house"></ion-icon>
+              Trang chủ 
+          </a></li>
+          <li><a href="">
+              <ion-icon class="fa-solid fa-gear"></ion-icon>
+              Hệ thống
+          </a></li>
+          <li><a href="thành viên.html">
+              <ion-icon class="fa-solid fa-user"></ion-icon>
+               Thành viên
+          </a></li>
+          <li><a href="giới thiệu.html">
+            <ion-icon class="fa-solid fa-message"></ion-icon>
+            Giới thiệu
+        </a></li>
+        <li><a href="đăng ký đăng nhâp.html">
+            <ion-icon class="fa-light fa-arrow-right-from-bracket"></ion-icon>
+            Đăng nhập
+        </a></li>
+      </ul>
+      </nav>
+      <section class="logo">
+        <img src="hinh anh/logo.png" alt="">   
+    </section>
+
+  <form action="" id="search">
+    <input  type="text" id="search-text" placeholder="bạn muốn tìm gì?" required>
+    <button id="search-btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  <script>
+    const nav = document.querySelector('nav');
+    const toggle_menu = document.querySelector('.toggle_menu');
+    toggle_menu.onclick = function(){
+         nav.classList.toggle('hide');}
+
+</script>
+<div id= "right">
+	<H2><u>BẢNG ĐO MỰC NƯỚC TRONG KHU VỰC</u></H2>
+<br>
+<div id="button_text">
+   
+<table>
+        <th>KHU VỰC</th>
+        <th>mực nước đo được</th>
+        </tr>
+        <tr>
+        <td><h2>ĐƯỜNG 3/2</h2></td>
+        <td><span id="cao"></span></td>
+        </tr>
+</table>
+<br>
+   <img id="denId_01" src="hinh anh/tắt.png" alt=""  >
+
+    <button id="btnOnId_01">On</button>
+    <button id="btnOffId_01">OFF</button>
+</div>
+</div>
+<br>
+<!-- .......................................................................................................................................................... -->
+<div id="right">
+
+
+<div id="button_text">
+   
+    <table>
+            <th>KHU VỰC</th>
+            <th>mực nước đo được</th>
+            </tr>
+            <tr>
+            <td><h2>NGUYỄN VĂN CỪ</h2></td>
+            <td><span id="cao_1"></span></td>
+            </tr>
+    </table>
+       <img id="denId_02" src="hinh anh/tắt.png" alt="">
+    
+        <button id="btnOnId_02">On</button>
+        <button id="btnOffId_02">OFF</button>
+    </div>
+    </div>
+    
+
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+           <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+          <!-- lien ket voi functions.js -->
+     <script src='demo.js'></script>
+     <script type="module"></script>
+    </body>
+    </html>

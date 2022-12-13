@@ -12,47 +12,55 @@
 <body>
     
     <nav>
-        <!-- <div class="logo"><img src="hinh anh/logo.png" alt=""></div> -->
         <div class="toggle_menu"><ion-icon class="fa-solid fa-bars"></ion-icon></div>
         <ul>  
-            <li><a href="#">  
+            <li><a href="web.html">  
                 <ion-icon class="fa-solid fa-house"></ion-icon>
-                Home
+                Trang chủ 
             </a></li>
-            <li><a href="#">
+            <li><a href="xuất dữ liệu.html">
                 <ion-icon class="fa-solid fa-gear"></ion-icon>
-                setting
+                Hệ thống
             </a></li>
-            <li><a href="#">
+            <li><a href="thành viên.html">
                 <ion-icon class="fa-solid fa-user"></ion-icon>
-                profile
+                 Thành viên
             </a></li>
-            <li><a href="#">
+            <li><a href="giới thiệu.html">
                 <ion-icon class="fa-solid fa-message"></ion-icon>
-                messenger
+                Giới thiệu
             </a></li>
-            <li><a href="#">
+            <li><a href="đăng ký đăng nhâp.html">
                 <ion-icon class="fa-light fa-arrow-right-from-bracket"></ion-icon>
-                log out
+                Đăng nhập
             </a></li>
         </ul>
     </nav>
     <section class="logo">
-         <img src="hinh anh/logo.png" alt="">
-    </section>
-    
-    <section class="content">
-        <h2>GIÁM SÁT VÀ CẢNH BÁO KHI CÓ NGẬP CỤC BỘ </h2>
+         <img src="hinh anh/logo.png" alt="">   
     </section>
     <script>
         const nav = document.querySelector('nav');
         const toggle_menu = document.querySelector('.toggle_menu');
-        const content = document.querySelector('.content');
-
         toggle_menu.onclick = function(){
-             nav.classList.toggle('hide');
-            content.classlist.toggle('expand');}
-    </script>
+             nav.classList.toggle('hide');}
    
+   </script>
+    <div id ="group-avt">
+
+        <form action="index.php" id="search">
+            <input  type="text" id="search-text" placeholder="bạn muốn tìm gì?" required>
+            <button id="search-btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        
+        <ul class="list_person">
+        <li>
+            <a href="xuất dữ liệu.html">
+                <img src="hinh anh/anh5.jpg" alt="">
+                <div class="name">GIÁM SÁT VÀ CẢNH BÁO KHI CÓ NGẬP CỤC BỘ</div>
+            </a>
+        </li>
+        </ul>
+    </div>
 </body>
 </html>

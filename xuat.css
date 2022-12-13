@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+
+#right{
+    padding-top: 100px;
+	padding-left: 500px;
+    width: 80%;
+    padding-right: 100px;
+
+
+}
+#button_text table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+#button_text table td, #button_text table th {
+border: 2px solid grey;
+padding: 8px;
+
+}
+#button_text table tr:nth-child(even){
+background-color: #f2f2f2;
+}
+#button_text table tr:hover {background-color: #ddd;}
+#button_text table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+#button_text table td a{
+text-decoration: none;
+color: blue;
+font-style: italic;
+}
+img{
+	padding-left: 120px;
+    width: 50%;
+}
+#button_text button {
+    padding: 45px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid ;
+    background: transparent;
+    color:rgb(253, 0, 0);
+    border-radius: 10px;
+    transition: 0.5s;
+ }
+ #button_text #btnOnId_01:hover, #btnOffId_01:hover {
+   
+    background: rgb(20, 220, 120);
+}
+#button_text #btnOnId_02:hover, #btnOffId_02:hover {
+   
+    background: rgb(20, 220, 120);
+}
+/* 
+..................................................................................................................................................... */
+
+
+nav{
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    background:#FFF5EE ;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+ nav.hide {
+    width: 0 ;
+    transition: all 0.5s ease-in-out;
+ }
+nav ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li a {
+    width: 100%;
+    color:	#080808 ;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    /* transition: linear 0.5s; */
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a ion-icon {
+    margin: 0 30px;
+    color: aqua ;
+    font-size: 1.2em;
+    transform: linear 0.2s;
+}
+nav ul li a:hover{
+    background:#A52A2A;
+    color: #00BFFF;
+}
+nav ul li a:hover ion-icon {
+    color:	#00008B ;
+}
+nav .toggle_menu {
+    position: absolute;
+    top:10px;
+    right: -46px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:	#FFDAB9;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: linear 0.2s;
+    /* transition: all 0.5s ease-in-out; */
+
+}
+nav .toggle_menu ion-icon{
+    color: #00BFFF;
+    font-size: 2em;
+    transition: linear 0.2s;
+
+}
+nav .toggle_menu:hover {
+    background: #00BFFF;
+}
+nav .toggle_menu:hover ion-icon {
+    color: #FFDAB9;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    background: #FFDAB9;
+    align-items: center;
+    width: 1500px;
+}
+#search #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    width: 0 ;
+    padding: 0;
+    transition: all 0.9s ease-in-out;
+}
+#search:hover #search-text, #search#search-text:valid{
+    width: 200px;
+    padding: 10px 0px 10px 15px;
+}
+#search #search-btn {
+    background-color:#00BFFF;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+}
+.logo{
+    background-color:#FFDAB9;
+    width:1500px ;
+    height: 140px;
+}
+.logo img {
+    padding-left: 29em;
+    width: 1000px;
+    height: 150px;
+    text-transform: uppercase;
+}
+
+ 

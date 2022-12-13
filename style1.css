@@ -12,21 +12,24 @@ body{
 }
 nav{
     position: fixed;
-    width: 250px;
+    width: 260px;
     height: 100%;
-    background:	#FFF5EE ;
+    background:#FFF5EE ;
     display: flex;
     align-items: center;
     border-right: 1px solid rgba(0, 0, 0, 1);
     z-index: 1000;
+    transition: all 0.5s ease-in-out;
 }
 
-nav.hide {
-    width: 0px ;
-    transition: linear 0.2s;
-    
+ nav.hide {
+    width: 0 ;
+    transition: all 0.5s ease-in-out;
+} 
+nav.low {
+    width: 0 ;
+    transition: all 0.5s ease-in-out;
 }
-
 nav ul {
     width: 100%;
     list-style: none;
@@ -40,7 +43,8 @@ nav ul li a {
     display: inline-flex;
     align-items: center;
     padding: 15px;
-    transition: linear 0.5s;
+    /* transition: linear 0.5s; */
+    transition: all 0.5s ease-in-out;
 }
 nav ul li a ion-icon {
     margin: 0 20px;
@@ -51,39 +55,20 @@ nav ul li a ion-icon {
 nav ul li a:hover{
     background:#A52A2A;
     color: #00BFFF;
-}
+}   
 nav ul li a:hover ion-icon {
     color:	#00008B ;
 }
-.content {
-    position: absolute;
-    top: 0;
-    left: 250px;
-    width: calc(100% - 250px );
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    transition: ease-in-out 0.5s;   
-}
 .logo{
-    background-color: #FFDAB9;
-    height: 160px;
+    background-color:#FFDAB9;
+    width:1500px ;
+    height: 140px;
 }
 .logo img {
-    padding-left: 32em;
-    width: 1100px;
+    padding-left: 29em;
+    width: 1000px;
     height: 150px;
     text-transform: uppercase;
-}
-.content h2{
-    width: 1000px;
-    padding-bottom: 300px;
-    font-size: 2.5em;
-    color: #00BFFF;
-    text-transform: uppercase;
-
 }
 
 nav .toggle_menu {
@@ -98,7 +83,8 @@ nav .toggle_menu {
     border-radius: 0 10px 10px 0;
     cursor: pointer;
     transition: linear 0.2s;
-    /* font-size: 30px; */
+    /* transition: all 0.5s ease-in-out; */
+
 }
 nav .toggle_menu ion-icon{
     color: #00BFFF;
@@ -112,3 +98,144 @@ nav .toggle_menu:hover {
 nav .toggle_menu:hover ion-icon {
     color: #FFDAB9;
 }
+
+ ul {
+        list-style: none;
+  }
+ a {
+    text-decoration: none;
+}
+.group-avt{
+    display: flex;
+    justify-content: center;
+}
+ul.list_person {
+    display: flex;
+}
+ul.list_person li {
+    max-width: 1500px;
+    overflow: hidden;
+}
+ul.list_person li a img{
+    display: flex;
+    width: 1500px;
+    height: 600px;
+    transition: all 1.5s ease-in-out;
+}
+ul.list_person li a {
+    position: relative;
+    display: block;
+}
+
+ul.list_person li:hover img {
+    transform: scale(1.2); 
+    opacity: 0.2 ;
+}
+ul.list_person li a .name {
+    position: absolute;
+    color: #080808;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-transform:uppercase ;
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    bottom: 10px;
+    left: 20%;
+    transform: translate(-10%);
+    transition: all 1.5s ease-in-out;
+    opacity: 0 ;
+}
+ul.list_person li a:hover .name{
+    bottom: 50%;
+    opacity: 1 ;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    background: #FFDAB9;
+    align-items: center;
+    width: 1500px;
+}
+#search #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    width: 0 ;
+    padding: 0;
+    transition: all 0.9s ease-in-out;
+}
+#search:hover #search-text, #search#search-text:valid{
+    width: 200px;
+    padding: 10px 0px 10px 15px;
+}
+#search #search-btn {
+    background-color:#00BFFF;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+
+
+#bodyt{
+    font: 20PX "Times New Roman", sans-serif;	 
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 5px;
+
+}
+p {text-align: justify; color: darkblue;}
+h1 {text-align: center; color: darkred;}
+h2 {text-align: justify; color: darkblue;}
+h4 {text-align: center; color: blue;}
+
+#content {
+   width: 960px;
+   margin: 0px auto;
+   padding-top: 10px;
+} 
+.text-center{
+   text-align: center;
+   margin: auto;
+   display: block;
+}
+#right {
+   padding-left: 450px;
+   width: 70%;
+
+}
+#right p{
+margin-right: 10px;
+}
+
+#right table{
+
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+   margin-bottom: 40px;
+}
+#right table td, #right table th {
+border: 2px solid grey;
+padding: 8px;
+}
+#right table tr:nth-child(even){
+background-color: #f2f2f2;
+}
+#right table tr:hover {background-color: #ddd;}
+#right table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+#right table td a{
+text-decoration: none;
+color: blue;
+font-style: italic;
+}
+
